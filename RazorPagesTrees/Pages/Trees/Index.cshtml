@@ -1,0 +1,66 @@
+﻿@page
+@model RazorPagesTrees.Pages.Trees.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tree[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tree[0].PlantingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tree[0].Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tree[0].Species)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tree[0].Height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tree[0].Circumference)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Tree) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlantingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Species)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Height)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Circumference)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

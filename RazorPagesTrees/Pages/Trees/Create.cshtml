@@ -1,0 +1,59 @@
+﻿@page
+@model RazorPagesTrees.Pages.Trees.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Tree</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tree.Name" class="control-label"></label>
+                <input asp-for="Tree.Name" class="form-control" />
+                <span asp-validation-for="Tree.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tree.PlantingDate" class="control-label"></label>
+                <input asp-for="Tree.PlantingDate" class="form-control" />
+                <span asp-validation-for="Tree.PlantingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tree.Age" class="control-label"></label>
+                <input asp-for="Tree.Age" class="form-control" />
+                <span asp-validation-for="Tree.Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tree.Species" class="control-label"></label>
+                <input asp-for="Tree.Species" class="form-control" />
+                <span asp-validation-for="Tree.Species" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tree.Height" class="control-label"></label>
+                <input asp-for="Tree.Height" class="form-control" />
+                <span asp-validation-for="Tree.Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tree.Circumference" class="control-label"></label>
+                <input asp-for="Tree.Circumference" class="form-control" />
+                <span asp-validation-for="Tree.Circumference" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
