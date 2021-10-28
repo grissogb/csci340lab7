@@ -144,3 +144,8 @@ C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\bin\Debug\net5.0\runt
 C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\obj\Debug\net5.0\Razor\Pages\Trees\Create.cshtml.g.cs
+C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\obj\Debug\net5.0\Razor\Pages\Trees\Delete.cshtml.g.cs
+C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\obj\Debug\net5.0\Razor\Pages\Trees\Details.cshtml.g.cs
+C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\obj\Debug\net5.0\Razor\Pages\Trees\Edit.cshtml.g.cs
+C:\Users\14797\Desktop\csci340\csci340lab7\RazorPagesTrees\obj\Debug\net5.0\Razor\Pages\Trees\Index.cshtml.g.cs
