@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesTrees.Data;
 
 namespace RazorPagesTrees.Migrations
 {
     [DbContext(typeof(RazorPagesTreesContext))]
-    partial class RazorPagesTreesContextModelSnapshot : ModelSnapshot
+    [Migration("20211028224220_New_DataAnnotations")]
+    partial class New_DataAnnotations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
